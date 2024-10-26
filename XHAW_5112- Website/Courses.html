@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+        
+    </style>
+    <script>
+        function calculateTotal() {
+            let total = 0;
+            const courses = document.querySelectorAll('input[type="checkbox"]:checked');
+            courses.forEach(course => {
+                total += parseInt(course.value);
+            });
+            alert('Total Price: ' + total);
+        }
+    </script>
+</head>
+<body>
+    <h1>Empowering the Nation</h1>
+
+    <div class="container">
+        <div class="header">
+            <img src="logo_.png">
+           
+        </div>
+
+        <ul>
+            <li>Courses</li>
+            <li><a href="Homepage.html">Homepage</a></li>
+            <li><a href="About Us.html">About Us</a></li>
+            <li><a href="Six-months courses.html">Six-months courses</a></li>
+            <li><a href="Fees info.html">Fees Info</a></li>
+            <li><a href="contact2.html">Contact Us</a></li>
+            <li><a href="Six-weeks courses.html">Six-weeks courses</a></li>
+        </ul>
+
+        <div class="course-selection">
+            <h2>Select Courses</h2>
+            <div class="courses">
+                <div class="six-weeks">
+                    <h3>Six-weeks</h3>
+                    <label><input type="checkbox" value="750"> Garden Maintenance (750)</label>
+                    <label><input type="checkbox" value="750"> Child Minding (750)</label>
+                    <label><input type="checkbox" value="750"> Cooking (750)</label>
+                </div>
+                <div class="six-months">
+                    <h3>Six-months</h3>
+                    <label><input type="checkbox" value="1500"> First Aid (1 500)</label>
+                    <label><input type="checkbox" value="1500"> Sewing (1 500)</label>
+                    <label><input type="checkbox" value="1500"> Landscaping (1 500)</label>
+                    <label><input type="checkbox" value="1500"> Life Skills (1 500)</label>
+                </div>
+            </div>
+            <button class="btn" onclick="calculateTotal()">Calculate Total</button>
+        </div>
+
+       
+    </div>
+
+    <footer>
+        <p>© 2024 Empowering the Nation. All rights reserved</p>
+    </footer>
+    
+</body>
+</html>
